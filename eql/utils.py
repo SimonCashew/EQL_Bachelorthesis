@@ -1,7 +1,7 @@
 from typing import List, Tuple, Callable
 import sympy as sy
 import jax.numpy as jnp
-from . import custom_functions
+from eql import custom_functions
 
 
 f_dict_jax = {

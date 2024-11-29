@@ -1,3 +1,4 @@
+from flax import linen as nn
 
 class L0ArmDense(nn.Module):
     features: int
