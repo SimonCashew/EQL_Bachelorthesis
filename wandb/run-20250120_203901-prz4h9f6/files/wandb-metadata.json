@@ -1,0 +1,31 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.12.7",
+  "startedAt": "2025-01-20T19:39:01.672165Z",
+  "program": "c:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb_test.py",
+  "codePath": "eql\\wandb_test.py",
+  "git": {
+    "remote": "https://github.com/SimonCashew/EQL_Bachelorthesis",
+    "commit": "17de0386ad5aadf06a59b0ed7afb8a71342346f8"
+  },
+  "email": "simon@braunreuther.de",
+  "root": "C:\\Users\\Simon\\Bachelorarbeit\\EQL",
+  "host": "LAPTOP-4TSGCV3N",
+  "executable": "C:\\Users\\Simon\\.conda\\envs\\EQL\\python.exe",
+  "codePathLocal": "eql\\wandb_test.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "511036092416",
+      "used": "122588499968"
+    }
+  },
+  "memory": {
+    "total": "16456052736"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}

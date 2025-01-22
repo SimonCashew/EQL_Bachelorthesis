@@ -1,0 +1,43 @@
+_wandb:
+    value:
+        cli_version: 0.19.4
+        m: []
+        python_version: 3.12.7
+        t:
+            "1":
+                - 12
+                - 45
+                - 55
+            "2":
+                - 12
+                - 45
+                - 55
+            "3":
+                - 2
+                - 16
+                - 23
+                - 55
+            "4": 3.12.7
+            "5": 0.19.4
+            "8":
+                - 1
+                - 3
+                - 5
+            "12": 0.19.4
+            "13": windows-amd64
+Batchsize:
+    value: 1000
+architecture:
+    value: EQL_2_Layers
+epochs:
+    value: 10000
+input_dim:
+    value: 1
+learning_rate:
+    value: 0.01
+optimizer:
+    value: Adam
+output_dim:
+    value: 1
+regularization:
+    value: No_reg

@@ -1,0 +1,42 @@
+{"time":"2025-01-20T21:32:02.3675279+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"c:\\Users\\Simon\\Bachelorarbeit\\EQL\\notebooks\\wandb\\run-20250120_213202-5gblrus9\\logs\\debug-core.log"}
+{"time":"2025-01-20T21:32:02.4827036+01:00","level":"INFO","msg":"created new stream","id":"5gblrus9"}
+{"time":"2025-01-20T21:32:02.4827036+01:00","level":"INFO","msg":"stream: started","id":"5gblrus9"}
+{"time":"2025-01-20T21:32:02.4827036+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:02.4827036+01:00","level":"INFO","msg":"sender: started","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:02.4827036+01:00","level":"INFO","msg":"handler: started","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:02.8128074+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-20T21:32:03.0019912+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:03.0105123+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:03.1006421+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:03.110102+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:03.3058773+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:03.3150925+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.0071247+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.0252314+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.0268113+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.0365297+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.0748829+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.0869774+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.0897137+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.0998449+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.1026849+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.1114276+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:04.1750251+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:04.1877462+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:21.8254463+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:21.83614+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:21.8417343+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:21.8502996+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:22.1632187+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:22.1725571+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:22.194893+01:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-01-20T21:32:22.2044044+01:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-01-20T21:32:22.2083067+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-20T21:32:22.2092778+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-20T21:32:22.8829222+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-20T21:32:23.1586673+01:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-01-20T21:32:24.1804849+01:00","level":"INFO","msg":"stream: closing","id":"5gblrus9"}
+{"time":"2025-01-20T21:32:24.1804849+01:00","level":"INFO","msg":"handler: closed","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:24.1804849+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:24.1804849+01:00","level":"INFO","msg":"sender: closed","stream_id":"5gblrus9"}
+{"time":"2025-01-20T21:32:24.1811142+01:00","level":"INFO","msg":"stream: closed","id":"5gblrus9"}
