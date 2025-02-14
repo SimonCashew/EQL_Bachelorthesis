@@ -1,9 +1,0 @@
-[2025-02-14 12:35:32,384][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
-[2025-02-14 12:35:32,387][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
-Error executing job with overrides: []
-Traceback (most recent call last):
-  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 48, in train
-    e = EQLdiv(n_layers=depth, functions=funs, features=1)
-                                         ^^^^
-UnboundLocalError: cannot access local variable 'funs' where it is not associated with a value
-Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
