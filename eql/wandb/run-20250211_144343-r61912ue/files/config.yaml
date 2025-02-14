@@ -1,0 +1,96 @@
+_wandb:
+    value:
+        cli_version: 0.19.4
+        m: []
+        python_version: 3.11.11
+        t:
+            "1":
+                - 12
+                - 45
+                - 50
+                - 55
+            "2":
+                - 12
+                - 45
+                - 50
+                - 55
+            "3":
+                - 2
+                - 16
+                - 23
+                - 55
+            "4": 3.11.11
+            "5": 0.19.4
+            "8":
+                - 3
+                - 5
+            "12": 0.19.4
+            "13": windows-amd64
+exp:
+    value:
+        model:
+            depth: 2
+            in_size: 2
+            key:
+                _target_: jax.random.PRNGKey
+                seed: 0
+            out_size: 1
+            width_size: 15
+opt:
+    value:
+        batchsize: 10000
+        epochs: 20000
+        l0_threshold: 0.001
+        loss_type: mse
+        lr_start: 0.0001
+sweep:
+    value:
+        command:
+            - C:/Users/Simon/.conda/envs/EQL/python.exe
+            - main_normal.py
+            - wandb.setup.entity=simonb03-university-of-t-bingen
+        method: grid
+        metric:
+            goal: minimize
+            name: val_loss
+        name: sweep_normal
+        parameters:
+            exp.model.depth:
+                values:
+                    - 1
+                    - 2
+            exp.model.in_size:
+                values:
+                    - 1
+                    - 2
+                    - 4
+            exp.model.key._target_:
+                value: jax.random.PRNGKey
+            exp.model.key.seed:
+                values:
+                    - 0
+                    - 1
+            exp.model.out_size:
+                value: 1
+            exp.model.width_size:
+                values:
+                    - 6
+                    - 15
+                    - 21
+            opt.batchsize:
+                value: 10000
+            opt.epochs:
+                value: 20000
+            opt.l0_threshold:
+                value: 0.001
+            opt.loss_type:
+                value: mse
+            opt.lr_start:
+                values:
+                    - 0.01
+                    - 0.0001
+        program: main_normal.py
+wandb:
+    value:
+        setup:
+            entity: simonb03-university-of-t-bingen

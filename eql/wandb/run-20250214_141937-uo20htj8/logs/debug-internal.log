@@ -1,0 +1,16 @@
+{"time":"2025-02-14T14:19:37.8875835+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250214_141937-uo20htj8\\logs\\debug-core.log"}
+{"time":"2025-02-14T14:19:38.0021936+01:00","level":"INFO","msg":"created new stream","id":"uo20htj8"}
+{"time":"2025-02-14T14:19:38.0021936+01:00","level":"INFO","msg":"stream: started","id":"uo20htj8"}
+{"time":"2025-02-14T14:19:38.0021936+01:00","level":"INFO","msg":"handler: started","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:19:38.0021936+01:00","level":"INFO","msg":"sender: started","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:19:38.0021936+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:19:38.2941323+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T14:22:42.1274118+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T14:22:42.1279599+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T14:22:43.0014001+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T14:22:43.1413525+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 400-405, summary, console lines 2-2","runtime_seconds":0.139439}],"total_operations":1}}
+{"time":"2025-02-14T14:22:44.3143351+01:00","level":"INFO","msg":"stream: closing","id":"uo20htj8"}
+{"time":"2025-02-14T14:22:44.3143351+01:00","level":"INFO","msg":"handler: closed","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:22:44.3143351+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:22:44.3143351+01:00","level":"INFO","msg":"sender: closed","stream_id":"uo20htj8"}
+{"time":"2025-02-14T14:22:44.3148954+01:00","level":"INFO","msg":"stream: closed","id":"uo20htj8"}

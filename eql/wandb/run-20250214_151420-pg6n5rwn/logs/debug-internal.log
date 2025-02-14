@@ -1,0 +1,674 @@
+2025-02-14 15:14:22,218 INFO    StreamThr :5172 [internal.py:wandb_internal():83] W&B internal server running at pid: 5172, started at: 2025-02-14 15:14:22.216057
+2025-02-14 15:14:22,223 INFO    WriterThread:5172 [datastore.py:open_for_write():87] open: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\run-pg6n5rwn.wandb
+2025-02-14 15:14:22,964 INFO    HandlerThread:5172 [system_monitor.py:start():187] Starting system monitor
+2025-02-14 15:14:22,964 INFO    SystemMonitor:5172 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-02-14 15:14:22,964 INFO    HandlerThread:5172 [system_monitor.py:probe():207] Collecting system info
+2025-02-14 15:14:22,968 INFO    SystemMonitor:5172 [interfaces.py:start():186] Started cpu monitoring
+2025-02-14 15:14:22,968 INFO    SenderThread:5172 [dir_watcher.py:__init__():211] watching files in: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files
+2025-02-14 15:14:22,968 INFO    SenderThread:5172 [sender.py:_start_run_threads():1150] run started: pg6n5rwn with start time 1739542462.216056
+2025-02-14 15:14:22,968 INFO    SystemMonitor:5172 [interfaces.py:start():186] Started disk monitoring
+2025-02-14 15:14:22,979 INFO    SystemMonitor:5172 [interfaces.py:start():186] Started memory monitoring
+2025-02-14 15:14:22,995 INFO    SystemMonitor:5172 [interfaces.py:start():186] Started network monitoring
+2025-02-14 15:14:23,103 INFO    HandlerThread:5172 [system_monitor.py:probe():217] Finished collecting system info
+2025-02-14 15:14:23,103 INFO    HandlerThread:5172 [system_monitor.py:probe():220] Publishing system info
+2025-02-14 15:14:23,982 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\conda-environment.yaml
+2025-02-14 15:14:25,319 INFO    HandlerThread:5172 [system_monitor.py:probe():222] Finished publishing system info
+2025-02-14 15:14:25,331 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-02-14 15:14:25,971 INFO    wandb-upload_0:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp5bj_4hh1wandb\2eof2jy1-wandb-metadata.json
+2025-02-14 15:14:25,986 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\conda-environment.yaml
+2025-02-14 15:14:25,986 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-metadata.json
+2025-02-14 15:14:25,986 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\output.log
+2025-02-14 15:14:25,986 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\requirements.txt
+2025-02-14 15:14:27,999 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\output.log
+2025-02-14 15:14:28,231 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:29,003 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:29,018 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:29,410 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:29,816 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:30,004 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:30,204 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:30,606 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:31,012 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:31,012 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:31,416 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:31,821 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:32,027 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:32,216 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:32,608 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:33,015 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:33,028 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:33,409 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:33,815 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:34,033 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:34,233 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:34,630 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:35,035 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:35,035 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:35,452 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:35,857 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:36,037 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:36,273 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:36,681 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:37,048 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:37,089 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:37,496 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:37,899 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:38,051 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:38,324 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:38,720 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:39,054 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:39,134 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:39,538 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:39,947 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:40,054 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:40,361 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:40,776 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:41,059 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:41,174 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:41,580 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:41,984 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:42,062 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:42,404 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:42,808 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:43,066 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:43,215 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:43,631 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:44,037 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:44,067 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:44,452 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:44,855 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:45,071 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:45,262 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:45,673 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:46,076 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:46,077 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:46,497 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:46,909 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:47,083 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:47,321 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:47,723 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:48,085 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:48,134 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:48,566 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:48,980 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:49,089 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:49,399 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:49,822 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:50,091 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:50,245 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:50,666 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:51,076 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:51,092 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:51,489 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:51,925 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:52,096 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:52,339 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:52,758 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:53,100 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:53,166 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:53,579 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:54,103 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:54,184 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:54,406 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:54,814 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:55,104 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:55,105 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\config.yaml
+2025-02-14 15:14:55,223 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:55,641 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:56,044 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:56,118 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:56,456 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:56,864 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:57,119 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:57,275 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:57,692 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:58,096 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:58,123 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:58,511 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:58,924 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:59,136 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:14:59,347 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:14:59,755 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:00,142 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:00,174 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:00,583 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:00,995 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:01,145 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:01,404 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:01,808 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:02,147 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:02,227 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:02,650 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:03,060 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:03,149 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:03,476 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:03,887 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:04,152 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:04,308 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:04,719 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:05,142 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:05,153 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:05,557 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:05,967 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:06,167 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:06,389 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:06,803 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:07,170 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:07,218 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:07,624 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:08,052 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:08,171 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:08,471 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:08,886 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:09,175 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:09,733 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:10,134 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:10,177 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:10,663 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:10,950 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:11,180 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:11,355 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:11,762 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:12,169 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:12,184 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:12,590 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:12,990 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:13,186 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:13,408 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:13,815 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:14,189 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:14,226 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:14,636 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:15,054 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:15,199 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:15,463 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:15,879 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:16,205 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:16,285 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:16,702 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:17,112 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:17,221 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:17,530 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:17,937 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:18,225 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:18,340 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:18,758 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:19,166 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:19,228 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:19,574 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:19,990 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:20,229 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:20,406 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:20,819 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:21,233 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:21,233 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:21,642 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:22,056 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:22,234 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:22,468 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:22,884 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:23,238 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:23,301 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:23,709 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:24,120 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:24,250 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:24,521 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:24,934 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:25,265 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:25,345 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:25,757 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:26,172 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:26,267 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:26,580 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:26,990 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:27,272 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:27,408 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:27,818 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:28,228 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:28,276 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:28,641 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:29,049 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:29,277 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:29,462 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:29,878 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:30,281 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:30,289 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:30,706 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:31,123 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:31,283 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:31,525 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:31,941 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:32,285 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:32,347 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:32,757 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:33,170 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:33,288 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:33,584 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:33,997 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:34,300 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:34,413 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:34,819 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:35,229 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:35,302 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:35,638 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:36,054 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:36,317 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:36,460 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:36,875 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:37,291 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:37,322 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:37,699 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:38,105 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:38,325 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:38,526 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:38,928 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:39,327 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:39,343 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:39,751 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:40,165 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:40,332 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:40,620 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:40,985 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:41,335 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:41,400 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:41,809 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:42,219 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:42,337 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:42,635 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:43,035 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:43,338 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:43,444 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:43,856 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:44,270 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:44,349 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:44,685 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:45,088 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:45,352 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:45,496 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:45,912 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:46,316 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:46,354 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:46,731 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:47,141 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:47,357 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:47,563 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:47,971 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:48,367 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:48,405 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:48,832 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:49,255 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:49,378 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:49,682 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:50,094 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:50,384 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:50,515 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:50,932 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:51,343 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:51,385 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:51,769 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:52,203 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:52,389 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:52,614 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:53,032 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:53,401 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:53,439 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:53,852 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:54,264 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:54,415 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:54,671 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:55,085 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:55,421 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:55,640 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:55,909 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:56,318 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:56,421 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:56,735 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:57,146 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:57,424 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:57,554 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:57,968 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:58,371 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:58,429 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:58,788 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:59,199 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:15:59,431 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:15:59,606 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:00,020 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:00,434 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:00,434 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:00,839 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:01,260 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:01,436 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:01,673 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:02,081 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:02,438 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:02,494 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:02,899 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:03,299 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:03,449 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:03,721 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:04,133 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:04,452 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:04,542 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:04,952 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:05,360 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:05,455 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:05,768 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:06,177 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:06,456 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:06,589 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:07,001 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:07,416 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:07,460 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:07,835 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:08,245 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:08,464 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:08,640 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:09,048 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:09,457 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:09,469 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:09,864 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:10,282 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:10,486 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:10,721 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:11,096 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:11,487 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:11,504 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:11,911 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:12,314 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:12,504 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:12,724 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:13,138 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:13,513 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:13,546 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:13,957 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:14,362 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:14,519 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:14,770 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:15,179 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:15,521 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:15,590 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:16,004 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:16,407 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:16,523 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:16,812 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:17,222 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:17,525 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:17,630 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:18,036 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:18,444 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:18,530 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:18,856 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:19,274 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:19,532 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:19,681 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:20,087 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:20,498 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:20,535 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:20,915 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:21,322 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:21,538 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:21,728 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:22,136 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:22,541 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:22,550 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:22,946 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:23,359 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:23,566 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:23,771 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:24,188 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:24,569 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:24,591 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:24,995 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:25,408 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:25,574 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:25,823 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:26,236 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:26,577 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:26,646 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:27,060 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:27,466 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:27,578 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:27,875 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:28,277 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:28,580 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:28,693 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:29,106 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:29,520 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:29,585 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:29,924 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:30,341 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:30,587 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:30,755 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:31,166 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:31,580 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:31,589 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:31,986 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:32,398 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:32,601 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:32,813 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:33,228 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:33,601 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:33,634 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:34,042 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:34,452 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:34,607 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:34,860 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:35,279 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:35,607 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:35,687 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:36,099 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:36,518 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:36,611 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:36,924 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:37,335 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:37,614 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:37,747 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:38,164 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:38,569 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:38,615 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:38,980 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:39,390 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:39,619 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:39,804 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:40,216 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:40,623 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:40,744 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:41,033 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:41,449 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:41,638 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:41,863 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:42,271 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:42,650 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:42,686 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:43,084 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:43,501 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:43,657 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:43,914 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:44,325 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:44,671 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:44,743 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:45,150 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:45,554 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:45,676 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:45,959 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:46,372 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:46,676 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:46,787 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:47,197 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:47,600 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:47,680 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:48,006 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:48,421 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:48,682 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:48,840 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:49,263 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:49,685 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:49,685 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:50,106 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:50,528 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:50,688 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:50,941 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:51,351 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:51,700 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:51,775 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:52,204 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:52,623 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:52,702 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:53,028 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:53,441 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:53,704 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:53,856 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:54,264 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:54,676 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:54,708 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:55,082 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:55,501 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:55,710 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:55,907 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:56,322 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:56,712 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:56,728 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:57,138 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:57,553 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:57,717 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:57,959 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:58,368 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:58,718 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:16:58,775 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:59,187 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:59,588 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:16:59,721 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:00,002 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:00,415 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:00,723 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:00,829 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:01,237 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:01,642 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:01,732 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:02,055 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:02,467 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:02,736 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:02,882 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:03,300 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:03,701 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:03,740 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:04,101 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:04,518 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:04,741 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:05,715 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:05,745 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:06,118 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:06,516 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:06,747 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:06,912 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:07,317 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:07,719 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:07,751 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:08,123 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:08,523 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:08,753 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:08,920 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:09,325 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:09,727 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:09,756 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:10,124 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:10,766 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:10,766 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:10,933 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:11,340 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:11,738 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:11,782 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:12,144 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:12,549 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:12,784 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:12,949 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:13,352 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:13,789 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:14,116 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:14,792 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:15,495 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,495 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,495 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,498 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,501 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,502 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,502 INFO    SenderThread:5172 [sender.py:send_exit():570] handling exit code: 0
+2025-02-14 15:17:15,502 INFO    SenderThread:5172 [sender.py:send_exit():572] handling runtime: 172
+2025-02-14 15:17:15,502 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,505 INFO    SenderThread:5172 [sender.py:send_exit():578] send defer
+2025-02-14 15:17:15,505 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 0
+2025-02-14 15:17:15,505 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 0
+2025-02-14 15:17:15,506 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 1
+2025-02-14 15:17:15,506 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 1
+2025-02-14 15:17:15,506 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 1
+2025-02-14 15:17:15,506 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 2
+2025-02-14 15:17:15,506 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 2
+2025-02-14 15:17:15,506 INFO    HandlerThread:5172 [system_monitor.py:finish():196] Stopping system monitor
+2025-02-14 15:17:15,507 INFO    HandlerThread:5172 [interfaces.py:finish():198] Joined cpu monitor
+2025-02-14 15:17:15,507 INFO    HandlerThread:5172 [interfaces.py:finish():198] Joined disk monitor
+2025-02-14 15:17:15,507 INFO    HandlerThread:5172 [interfaces.py:finish():198] Joined memory monitor
+2025-02-14 15:17:15,507 INFO    HandlerThread:5172 [interfaces.py:finish():198] Joined network monitor
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 2
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 3
+2025-02-14 15:17:15,508 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 3
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 3
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 4
+2025-02-14 15:17:15,508 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 4
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 4
+2025-02-14 15:17:15,508 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 5
+2025-02-14 15:17:15,508 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 5
+2025-02-14 15:17:15,514 INFO    SenderThread:5172 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-14 15:17:15,515 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 5
+2025-02-14 15:17:15,515 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 6
+2025-02-14 15:17:15,517 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 6
+2025-02-14 15:17:15,517 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 6
+2025-02-14 15:17:15,703 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 7
+2025-02-14 15:17:15,703 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 7
+2025-02-14 15:17:15,703 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 7
+2025-02-14 15:17:15,798 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:15,798 INFO    Thread-16 :5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\config.yaml
+2025-02-14 15:17:17,774 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 8
+2025-02-14 15:17:17,774 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 8
+2025-02-14 15:17:17,774 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 8
+2025-02-14 15:17:17,774 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 9
+2025-02-14 15:17:17,774 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 9
+2025-02-14 15:17:17,774 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 9
+2025-02-14 15:17:17,774 INFO    SenderThread:5172 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\output.log
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():388] scan: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\conda-environment.yaml conda-environment.yaml
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\config.yaml config.yaml
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\output.log output.log
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\requirements.txt requirements.txt
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-metadata.json wandb-metadata.json
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json wandb-summary.json
+2025-02-14 15:17:17,803 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 10
+2025-02-14 15:17:17,803 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 10
+2025-02-14 15:17:17,818 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 10
+2025-02-14 15:17:17,820 INFO    SenderThread:5172 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-14 15:17:18,338 INFO    wandb-upload_0:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\conda-environment.yaml
+2025-02-14 15:17:18,656 INFO    wandb-upload_4:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\wandb-summary.json
+2025-02-14 15:17:18,656 INFO    wandb-upload_1:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\config.yaml
+2025-02-14 15:17:18,999 INFO    wandb-upload_3:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\requirements.txt
+2025-02-14 15:17:18,999 INFO    wandb-upload_2:5172 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\files\output.log
+2025-02-14 15:17:19,220 INFO    Thread-15 (_thread_body):5172 [sender.py:transition_state():598] send defer: 11
+2025-02-14 15:17:19,220 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 11
+2025-02-14 15:17:19,222 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 11
+2025-02-14 15:17:19,222 INFO    SenderThread:5172 [file_pusher.py:join():175] waiting for file pusher
+2025-02-14 15:17:19,223 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 12
+2025-02-14 15:17:19,223 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 12
+2025-02-14 15:17:19,223 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 12
+2025-02-14 15:17:19,223 INFO    SenderThread:5172 [file_stream.py:finish():601] file stream finish called
+2025-02-14 15:17:20,145 INFO    SenderThread:5172 [file_stream.py:finish():605] file stream finish is done
+2025-02-14 15:17:20,145 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 13
+2025-02-14 15:17:20,145 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 13
+2025-02-14 15:17:20,145 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 13
+2025-02-14 15:17:20,145 INFO    SenderThread:5172 [sender.py:transition_state():598] send defer: 14
+2025-02-14 15:17:20,145 INFO    HandlerThread:5172 [handler.py:handle_request_defer():188] handle defer: 14
+2025-02-14 15:17:20,145 INFO    SenderThread:5172 [sender.py:send_request_defer():594] handle sender defer: 14
+2025-02-14 15:17:20,145 INFO    HandlerThread:5172 [handler.py:finish():896] shutting down handler
+2025-02-14 15:17:21,164 INFO    WriterThread:5172 [datastore.py:close():296] close: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250214_151420-pg6n5rwn\run-pg6n5rwn.wandb
+2025-02-14 15:17:21,164 INFO    SenderThread:5172 [sender.py:finish():1598] shutting down sender
+2025-02-14 15:17:21,164 INFO    SenderThread:5172 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-14 15:17:21,164 INFO    SenderThread:5172 [file_pusher.py:join():175] waiting for file pusher

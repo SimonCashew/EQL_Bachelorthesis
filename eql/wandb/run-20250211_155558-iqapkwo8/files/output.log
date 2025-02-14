@@ -1,0 +1,9 @@
+Error executing job with overrides: ['wandb.setup.entity=simonb03-university-of-t-bingen']
+Traceback (most recent call last):
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 33, in train
+    xdim = cfg.exp.model.in_size
+           ^^^^^^^
+omegaconf.errors.ConfigAttributeError: Key 'exp' is not in struct
+    full_key: exp
+    object_type=dict
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

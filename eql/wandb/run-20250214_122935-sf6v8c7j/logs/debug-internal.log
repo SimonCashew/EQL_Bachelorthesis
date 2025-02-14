@@ -1,0 +1,16 @@
+{"time":"2025-02-14T12:29:36.2457186+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250214_122935-sf6v8c7j\\logs\\debug-core.log"}
+{"time":"2025-02-14T12:29:36.362033+01:00","level":"INFO","msg":"created new stream","id":"sf6v8c7j"}
+{"time":"2025-02-14T12:29:36.362625+01:00","level":"INFO","msg":"stream: started","id":"sf6v8c7j"}
+{"time":"2025-02-14T12:29:36.362625+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:29:36.362625+01:00","level":"INFO","msg":"sender: started","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:29:36.362625+01:00","level":"INFO","msg":"handler: started","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:29:36.8677243+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T12:32:28.2826146+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T12:32:28.2831894+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T12:32:29.2834597+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.249516,"progress":"2.0KB/2.0KB"}],"total_operations":1}}
+{"time":"2025-02-14T12:32:29.3842292+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T12:32:30.9043094+01:00","level":"INFO","msg":"stream: closing","id":"sf6v8c7j"}
+{"time":"2025-02-14T12:32:30.9043094+01:00","level":"INFO","msg":"handler: closed","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:32:30.9043094+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:32:30.9043094+01:00","level":"INFO","msg":"sender: closed","stream_id":"sf6v8c7j"}
+{"time":"2025-02-14T12:32:30.9043094+01:00","level":"INFO","msg":"stream: closed","id":"sf6v8c7j"}
