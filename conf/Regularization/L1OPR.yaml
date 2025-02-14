@@ -1,4 +1,0 @@
-epochs: 25 # eventuell ausgliedern
-learning_rate: 0.001
-optimizer: SGD
-loss_function: cross_entropy

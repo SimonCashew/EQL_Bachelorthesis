@@ -1,0 +1,20 @@
+[2025-02-12 15:05:27,880][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+[2025-02-12 15:05:27,880][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 149, in train
+    params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 135, in do_step
+    loss_val, grad = loss_grad(params, theta)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 110, in loss_fn
+    mse, b = mse_b_fn(params, threshold)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 68, in mse_b_fn
+    return jnp.mean((pred-y)**2), b
+                          ^
+NameError: cannot access free variable 'y' where it is not associated with a value in enclosing scope
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

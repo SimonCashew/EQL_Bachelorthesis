@@ -1,0 +1,30 @@
+2025-02-12 11:50:22,697 INFO    StreamThr :9612 [internal.py:wandb_internal():83] W&B internal server running at pid: 9612, started at: 2025-02-12 11:50:22.697712
+2025-02-12 11:50:22,697 INFO    WriterThread:9612 [datastore.py:open_for_write():87] open: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\run-x2faf7k7.wandb
+2025-02-12 11:50:23,597 INFO    HandlerThread:9612 [system_monitor.py:start():187] Starting system monitor
+2025-02-12 11:50:23,597 INFO    SystemMonitor:9612 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-02-12 11:50:23,597 INFO    HandlerThread:9612 [system_monitor.py:probe():207] Collecting system info
+2025-02-12 11:50:23,597 INFO    SystemMonitor:9612 [interfaces.py:start():186] Started cpu monitoring
+2025-02-12 11:50:23,597 INFO    SystemMonitor:9612 [interfaces.py:start():186] Started disk monitoring
+2025-02-12 11:50:23,615 INFO    SystemMonitor:9612 [interfaces.py:start():186] Started memory monitoring
+2025-02-12 11:50:23,618 INFO    SenderThread:9612 [dir_watcher.py:__init__():211] watching files in: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files
+2025-02-12 11:50:23,618 INFO    SenderThread:9612 [sender.py:_start_run_threads():1150] run started: x2faf7k7 with start time 1739357422.697711
+2025-02-12 11:50:23,629 INFO    SystemMonitor:9612 [interfaces.py:start():186] Started network monitoring
+2025-02-12 11:50:23,720 INFO    HandlerThread:9612 [system_monitor.py:probe():217] Finished collecting system info
+2025-02-12 11:50:23,723 INFO    HandlerThread:9612 [system_monitor.py:probe():220] Publishing system info
+2025-02-12 11:50:24,614 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\conda-environment.yaml
+2025-02-12 11:50:26,004 INFO    HandlerThread:9612 [system_monitor.py:probe():222] Finished publishing system info
+2025-02-12 11:50:26,006 INFO    SenderThread:9612 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-02-12 11:50:26,622 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\conda-environment.yaml
+2025-02-12 11:50:26,622 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\requirements.txt
+2025-02-12 11:50:26,622 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\wandb-metadata.json
+2025-02-12 11:50:26,832 INFO    wandb-upload_0:9612 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmpntq9lid4wandb\aqn2vf4j-wandb-metadata.json
+2025-02-12 11:50:27,625 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\output.log
+2025-02-12 11:50:29,651 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\output.log
+2025-02-12 11:50:38,132 INFO    SenderThread:9612 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-12 11:50:38,699 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\wandb-summary.json
+2025-02-12 11:50:48,617 INFO    SenderThread:9612 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-12 11:50:48,784 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\wandb-summary.json
+2025-02-12 11:50:56,849 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\config.yaml
+2025-02-12 11:50:59,768 INFO    SenderThread:9612 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-12 11:50:59,873 INFO    Thread-16 :9612 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250212_115020-x2faf7k7\files\wandb-summary.json
+2025-02-12 11:51:08,831 INFO    MainThread:9612 [internal.py:handle_exit():73] Internal process exited

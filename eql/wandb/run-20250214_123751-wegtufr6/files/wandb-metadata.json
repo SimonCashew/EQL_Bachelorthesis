@@ -1,0 +1,51 @@
+{
+    "os": "Windows-10-10.0.26100-SP0",
+    "python": "CPython 3.11.11",
+    "heartbeatAt": "2025-02-14T11:37:54.424445",
+    "startedAt": "2025-02-14T11:37:51.786982",
+    "docker": null,
+    "args": [
+        "service",
+        "--debug",
+        "--port-filename",
+        "C:\\Users\\Simon\\AppData\\Local\\Temp\\tmps3gz8f3p\\port-9928.txt",
+        "--pid",
+        "9928"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\main_normal.py",
+    "codePathLocal": "main_normal.py",
+    "codePath": "eql\\main_normal.py",
+    "git": {
+        "remote": "https://github.com/SimonCashew/EQL_Bachelorthesis",
+        "commit": "36ce89194d2a6c7af6e7df4d06c750f21b711d1e"
+    },
+    "email": "simon@braunreuther.de",
+    "root": "C:/Users/Simon/Bachelorarbeit/EQL",
+    "host": "LAPTOP-4TSGCV3N",
+    "username": null,
+    "executable": "C:\\Users\\Simon\\.conda\\envs\\EQL\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 1801.0,
+        "min": 0.0,
+        "max": 1801.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1801.0,
+            "min": 0.0,
+            "max": 1801.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 511036092416,
+            "used": 137079156736
+        }
+    },
+    "memory": {
+        "total": 16456052736
+    }
+}

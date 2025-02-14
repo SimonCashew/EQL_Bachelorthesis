@@ -1,0 +1,13 @@
+model:
+  name: EQL_1
+  layers: 1
+Optimizer:
+  epochs: 25
+  learning_rate: 0.001
+  optimizer: Adam
+  loss_function: cross_entropy
+  scheduler:
+    type: step
+    step_size: 10
+    gamma: 0.1
+Regularization: {}

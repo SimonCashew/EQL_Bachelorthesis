@@ -1,0 +1,31 @@
+Error executing job with overrides: ['wandb.setup.entity=simonb03-university-of-t-bingen']
+Traceback (most recent call last):
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 31, in train
+    wandb.config.update(cfg, allow_val_change=True)  # Werte aus Sweep überschreiben
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\wandb\sdk\wandb_config.py", line 187, in update
+    sanitized = self._update(d, allow_val_change)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\wandb\sdk\wandb_config.py", line 180, in _update
+    sanitized = self._sanitize_dict(
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\wandb\sdk\wandb_config.py", line 267, in _sanitize_dict
+    k, v = self._sanitize(k, v, allow_val_change)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\wandb\sdk\wandb_config.py", line 285, in _sanitize
+    val = json_friendly_val(val)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\wandb\util.py", line 646, in json_friendly_val
+    converted = asdict(val)
+                ^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\dataclasses.py", line 1286, in asdict
+    return _asdict_inner(obj, dict_factory)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\dataclasses.py", line 1293, in _asdict_inner
+    value = _asdict_inner(getattr(obj, f.name), dict_factory)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\dataclasses.py", line 1323, in _asdict_inner
+    return type(obj)((_asdict_inner(k, dict_factory),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: first argument must be callable or None
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

@@ -1,0 +1,16 @@
+{"time":"2025-02-12T11:31:48.8054401+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250212_113148-z2chfksh\\logs\\debug-core.log"}
+{"time":"2025-02-12T11:31:48.9181538+01:00","level":"INFO","msg":"created new stream","id":"z2chfksh"}
+{"time":"2025-02-12T11:31:48.9181538+01:00","level":"INFO","msg":"stream: started","id":"z2chfksh"}
+{"time":"2025-02-12T11:31:48.9181538+01:00","level":"INFO","msg":"sender: started","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:31:48.9181538+01:00","level":"INFO","msg":"handler: started","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:31:48.9181538+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:31:49.2662066+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-12T11:35:16.0640155+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-12T11:35:16.0647456+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-12T11:35:16.9854318+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-12T11:35:17.0693006+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 399-404, summary, console lines 2-2","runtime_seconds":0.0838688}],"total_operations":1}}
+{"time":"2025-02-12T11:35:18.3242719+01:00","level":"INFO","msg":"stream: closing","id":"z2chfksh"}
+{"time":"2025-02-12T11:35:18.3242719+01:00","level":"INFO","msg":"handler: closed","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:35:18.3242719+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:35:18.3242719+01:00","level":"INFO","msg":"sender: closed","stream_id":"z2chfksh"}
+{"time":"2025-02-12T11:35:18.3242719+01:00","level":"INFO","msg":"stream: closed","id":"z2chfksh"}

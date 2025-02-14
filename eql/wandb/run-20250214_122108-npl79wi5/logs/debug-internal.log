@@ -1,0 +1,15 @@
+{"time":"2025-02-14T12:21:09.3245011+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250214_122108-npl79wi5\\logs\\debug-core.log"}
+{"time":"2025-02-14T12:21:09.622826+01:00","level":"INFO","msg":"created new stream","id":"npl79wi5"}
+{"time":"2025-02-14T12:21:09.622826+01:00","level":"INFO","msg":"sender: started","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:21:09.622826+01:00","level":"INFO","msg":"stream: started","id":"npl79wi5"}
+{"time":"2025-02-14T12:21:09.6234133+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:21:09.622826+01:00","level":"INFO","msg":"handler: started","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:21:10.1065332+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-14T12:24:22.6090242+01:00","level":"INFO","msg":"stream: closing","id":"npl79wi5"}
+{"time":"2025-02-14T12:24:22.6090242+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-14T12:24:22.6101108+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-14T12:24:23.4877649+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-14T12:24:23.7410195+01:00","level":"INFO","msg":"handler: closed","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:24:23.7410195+01:00","level":"INFO","msg":"sender: closed","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:24:23.7410195+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"npl79wi5"}
+{"time":"2025-02-14T12:24:23.7410195+01:00","level":"INFO","msg":"stream: closed","id":"npl79wi5"}

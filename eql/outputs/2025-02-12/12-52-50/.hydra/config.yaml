@@ -1,0 +1,58 @@
+in_size: 4
+out_size: 1
+width_size: 21
+depth: 2
+_target_: jax.random.PRNGKey
+seed: 0
+epochs: 20000
+batchsize: 10000
+loss_type: mse
+lr_start: 0.0001
+l0_threshold: 0.001
+wandb:
+  setup:
+    entity: simonb03-university-of-t-bingen
+sweep:
+  program: main_normal.py
+  name: sweep_normal
+  metric:
+    name: val_loss
+    goal: minimize
+  method: grid
+  parameters:
+    in_size:
+      values:
+      - 1
+      - 2
+      - 4
+    out_size:
+      value: 1
+    width_size:
+      values:
+      - 15
+      - 21
+    depth:
+      values:
+      - 1
+      - 2
+    _target_:
+      value: jax.random.PRNGKey
+    seed:
+      values:
+      - 0
+      - 1
+    epochs:
+      value: 20000
+    batchsize:
+      value: 10000
+    loss_type:
+      value: mse
+    lr_start:
+      values:
+      - 0.001
+      - 0.0001
+    l0_threshold:
+      value: 0.001
+  command:
+  - C:/Users/Simon/.conda/envs/EQL/python.exe
+  - main_normal.py

@@ -1,0 +1,10 @@
+[2025-02-14 12:21:10,965][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+[2025-02-14 12:21:10,971][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_normal.py", line 176, in train
+    val_loss = mse_fn(params, x_val, y_val, l0_threshold)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: train.<locals>.mse_fn() takes 2 positional arguments but 4 were given
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

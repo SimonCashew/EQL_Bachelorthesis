@@ -1,4 +1,0 @@
-defaults:
-  - model: EQL_1_layer
-  - Optimizer: Adam
-  - Regularization: L1
