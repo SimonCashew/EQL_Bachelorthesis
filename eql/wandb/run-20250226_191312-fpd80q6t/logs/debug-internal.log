@@ -1,0 +1,16 @@
+{"time":"2025-02-26T19:13:12.6214883+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250226_191312-fpd80q6t\\logs\\debug-core.log"}
+{"time":"2025-02-26T19:13:12.7355888+01:00","level":"INFO","msg":"created new stream","id":"fpd80q6t"}
+{"time":"2025-02-26T19:13:12.7355888+01:00","level":"INFO","msg":"stream: started","id":"fpd80q6t"}
+{"time":"2025-02-26T19:13:12.7355888+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:13:12.7355888+01:00","level":"INFO","msg":"sender: started","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:13:12.7355888+01:00","level":"INFO","msg":"handler: started","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:13:13.3609208+01:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T19:16:05.8738274+01:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T19:16:05.8748982+01:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T19:16:06.8352384+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T19:16:06.8814442+01:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 386-399, summary, console lines 2-2","runtime_seconds":0.0462058}],"total_operations":1}}
+{"time":"2025-02-26T19:16:08.1311689+01:00","level":"INFO","msg":"stream: closing","id":"fpd80q6t"}
+{"time":"2025-02-26T19:16:08.1311689+01:00","level":"INFO","msg":"handler: closed","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:16:08.1311689+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:16:08.1311689+01:00","level":"INFO","msg":"sender: closed","stream_id":"fpd80q6t"}
+{"time":"2025-02-26T19:16:08.1311689+01:00","level":"INFO","msg":"stream: closed","id":"fpd80q6t"}

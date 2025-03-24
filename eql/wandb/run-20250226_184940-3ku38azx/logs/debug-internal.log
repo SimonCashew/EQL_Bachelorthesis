@@ -1,0 +1,7 @@
+{"time":"2025-02-26T18:49:40.47773+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250226_184940-3ku38azx\\logs\\debug-core.log"}
+{"time":"2025-02-26T18:49:40.5922125+01:00","level":"INFO","msg":"created new stream","id":"3ku38azx"}
+{"time":"2025-02-26T18:49:40.5922125+01:00","level":"INFO","msg":"stream: started","id":"3ku38azx"}
+{"time":"2025-02-26T18:49:40.5922125+01:00","level":"INFO","msg":"handler: started","stream_id":"3ku38azx"}
+{"time":"2025-02-26T18:49:40.5922125+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"3ku38azx"}
+{"time":"2025-02-26T18:49:40.5922125+01:00","level":"INFO","msg":"sender: started","stream_id":"3ku38azx"}
+{"time":"2025-02-26T18:49:41.0110409+01:00","level":"INFO","msg":"Starting system monitor"}

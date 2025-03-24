@@ -1,0 +1,31 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.11.11",
+  "startedAt": "2025-02-26T17:55:45.580391Z",
+  "program": "C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\main_OPR.py",
+  "codePath": "eql\\main_OPR.py",
+  "git": {
+    "remote": "https://github.com/SimonCashew/EQL_Bachelorthesis",
+    "commit": "3ce64d8acc7efc88efb2772604132d616ba8d47c"
+  },
+  "email": "simon@braunreuther.de",
+  "root": "C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql",
+  "host": "LAPTOP-4TSGCV3N",
+  "executable": "C:\\Users\\Simon\\.conda\\envs\\EQL\\python.exe",
+  "codePathLocal": "main_OPR.py",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "511036092416",
+      "used": "138042920960"
+    }
+  },
+  "memory": {
+    "total": "16456052736"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}

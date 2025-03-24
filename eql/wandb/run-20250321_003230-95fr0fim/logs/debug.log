@@ -1,0 +1,30 @@
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Configure stats pid to 13332
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Simon\.config\wandb\settings
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\settings
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-03-21 00:32:30,700 INFO    MainThread:13332 [wandb_init.py:setup_run_log_directory():624] Logging user logs to C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250321_003230-95fr0fim\logs\debug.log
+2025-03-21 00:32:30,704 INFO    MainThread:13332 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250321_003230-95fr0fim\logs\debug-internal.log
+2025-03-21 00:32:30,704 INFO    MainThread:13332 [wandb_init.py:init():743] calling init triggers
+2025-03-21 00:32:30,704 INFO    MainThread:13332 [wandb_init.py:init():748] wandb.init called with sweep_config: {'_target_': 'jax.random.PRNGKey', 'batchsize': 10000, 'depth': 2, 'epochs': 20000, 'in_size': 2, 'l0_threshold': 0.001, 'loss_type': 'mse', 'lr_start': 0.001, 'out_size': 1, 'seed': 18, 'width_size': 18}
+config: {'in_size': 3, 'out_size': 1, 'width_size': 21, 'depth': 2, '_target_': 'jax.random.PRNGKey', 'seed': 1, 'epochs': 20000, 'batchsize': 10000, 'loss_type': 'mse', 'lr_start': 0.001, 'l0_threshold': 0.001, 'wandb': {'setup': {'entity': 'simonb03-university-of-t-bingen'}}, 'sweep': {'program': 'main_OPR.py', 'name': 'OPR_sweep_2_seed', 'metric': {'name': 'val_loss', 'goal': 'minimize'}, 'method': 'grid', 'parameters': {'in_size': {'value': 2}, 'out_size': {'value': 1}, 'width_size': {'value': 18}, 'depth': {'value': 2}, '_target_': {'value': 'jax.random.PRNGKey'}, 'seed': {'values': [0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]}, 'epochs': {'value': 20000}, 'batchsize': {'value': 10000}, 'loss_type': {'value': 'mse'}, 'lr_start': {'value': 0.001}, 'l0_threshold': {'value': 0.001}}, 'command': ['C:/Users/Simon/.conda/envs/EQL/python.exe', 'main_OPR.py']}}
+2025-03-21 00:32:30,704 INFO    MainThread:13332 [wandb_init.py:init():776] starting backend
+2025-03-21 00:32:32,935 INFO    MainThread:13332 [wandb_init.py:init():780] sending inform_init request
+2025-03-21 00:32:32,966 INFO    MainThread:13332 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2025-03-21 00:32:32,967 INFO    MainThread:13332 [wandb_init.py:init():795] backend started and connected
+2025-03-21 00:32:32,968 INFO    MainThread:13332 [wandb_run.py:_config_callback():1270] config_cb None None {'_target_': 'jax.random.PRNGKey', 'batchsize': 10000, 'depth': 2, 'epochs': 20000, 'in_size': 2, 'l0_threshold': 0.001, 'loss_type': 'mse', 'lr_start': 0.001, 'out_size': 1, 'seed': 18, 'width_size': 18}
+2025-03-21 00:32:32,969 INFO    MainThread:13332 [wandb_init.py:init():888] updated telemetry
+2025-03-21 00:32:33,026 INFO    MainThread:13332 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-03-21 00:32:33,525 INFO    MainThread:13332 [wandb_init.py:init():967] starting run threads in backend
+2025-03-21 00:32:36,525 INFO    MainThread:13332 [wandb_run.py:_console_start():2409] atexit reg
+2025-03-21 00:32:36,526 INFO    MainThread:13332 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-03-21 00:32:36,526 INFO    MainThread:13332 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-03-21 00:32:36,526 INFO    MainThread:13332 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-03-21 00:32:36,535 INFO    MainThread:13332 [wandb_init.py:init():1009] run started, returning control to user process
+2025-03-21 00:35:55,947 INFO    MainThread:13332 [wandb_run.py:_finish():2134] finishing run simonb03-university-of-t-bingen/OPR_sweep_2_seed/95fr0fim
+2025-03-21 00:35:55,954 INFO    MainThread:13332 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-03-21 00:35:55,954 INFO    MainThread:13332 [wandb_run.py:_restore():2356] restore
+2025-03-21 00:35:55,954 INFO    MainThread:13332 [wandb_run.py:_restore():2362] restore done
+2025-03-21 00:36:02,455 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-03-21 00:36:02,455 INFO    MainThread:13332 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-03-21 00:36:02,455 INFO    MainThread:13332 [wandb_run.py:_footer_sync_info():3937] logging synced files

@@ -28,8 +28,7 @@ def train(cfg: DictConfig):
     cfg_container = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
     run = wandb.init(project="test_normal", config=cfg_container)
     cfg_dict = dict(wandb.config)
-    cfg = OmegaConf.create(cfg_dict) 
-    #wandb.config = cfg # Sweep?
+    cfg = OmegaConf.create(cfg_dict)
 
     xdim = cfg.in_size
     key = random.PRNGKey(cfg.seed)
@@ -45,22 +44,27 @@ def train(cfg: DictConfig):
         funs = ['mul', 'mul', 'cos', 'cos', 'sin', 'sin', 'id', 'id', 'id']*2
     elif (width == 21):
         funs = ['mul', 'cos' , 'sin', 'id', 'id', 'id', 'id']*3
+    elif (width == 12):
+        funs = ['mul', 'mul', 'sin', 'cos', 'id', 'id']*2
     e = EQLdiv(n_layers=depth, functions=funs, features=1)
 
     x = (random.uniform(key, (batchsize, xdim))-.5) * 2
-    x_val = (random.uniform(random.PRNGKey(2), (1000, xdim))-.5) * 2
+    x_val1 = (random.uniform(random.PRNGKey(1), (1000, xdim))-.5) * 2
+    x_val2 = (random.uniform(random.PRNGKey(2), (1000, xdim))-.5) * 2
+    x_val3 = (random.uniform(random.PRNGKey(3), (1000, xdim))-.5) * 2
+    x_val = jnp.concatenate([x_val1, x_val2, x_val3], axis=0)
 
     if (xdim == 2):
         y = np.sin(np.pi * x[:,0])/(x[:,1]**2 + 1)
         y_val = np.sin(np.pi * x_val[:,0])/(x_val[:,1]**2 + 1)
-    elif xdim == 3:
+    elif (xdim == 3):
         y = np.sin(np.pi * x[:,0]) * np.cos(np.pi * x[:,1]) + x[:,1] * x[:,2]
         y_val = np.sin(np.pi * x_val[:,0]) * np.cos(np.pi * x_val[:,1]) + x_val[:,1] * x_val[:,2]
-
+        
     elif (xdim == 4):
         y = 1./3. * ((1.+x[:,1])*np.sin(np.pi*x[:,0]) + x[:,1]*x[:,2]*x[:,3])
         y_val = 1./3. * ((1.+x_val[:,1])*np.sin(np.pi*x_val[:,0]) + x_val[:,1]*x_val[:,2]*x_val[:,3])
-
+       
     params = e.init({'params':key}, x, 1.0)
 
     def mse_fn(params, threshold):
@@ -140,8 +144,6 @@ def train(cfg: DictConfig):
         updates, opt_state = tx.update(grad, opt_state)
         return optax.apply_updates(params, updates), opt_state, loss_val
     
-    prev_loss = 0
-    
     T1 = 5000
     for i in range(19000):
         theta = 1./jnp.sqrt(i/1 + 1)
@@ -151,37 +153,46 @@ def train(cfg: DictConfig):
             lg = loss_grad_2
         params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         if i % 50 == 0 and i > 0:
-            if prev_loss == loss_val and i < T1:
-                i = T1
-            if prev_loss == loss_val and i > T1:
-                i = 19000
-            prev_loss = loss_val
             wandb.log({"loss": loss_val})
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
         
     thr = l0_threshold
-    loss_grad_masked = jax.jit(jax.value_and_grad(get_masked_mse(thr, params)))
     T = 19000
+    lg = loss_grad_1
     for i in range(1000):
         theta = 1./jnp.sqrt(T/1 + 1)
-        loss_val, grads = loss_grad_masked(params, theta)
-        updates, opt_state = tx.update(grads, opt_state)
-        params = optax.apply_updates(params, updates)
+        params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         mask, spec = get_mask_spec(thr, params)
         params = apply_mask(mask, spec, params)
         T +=1
         if i % 50 == 0:
             wandb.log({"loss": loss_val})
+            params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
 
     def mse_val_fn(params, threshold):
         pred, _ = e.apply(params, x_val, threshold)
         return jnp.mean((pred - y_val) ** 2)
 
     val_loss = mse_val_fn(params, l0_threshold)
-    wandb.log({"validation_loss": val_loss})
+
+    table = wandb.Table(columns=["Sweep", "Validation Loss"])
+    table.add_data(wandb.run.name, val_loss)
+    wandb.log({"Validation Sweep Table": table})
+
+
+    def log_zeros(params):
+        flattened_params, _ = tree_flatten(params)
+
+        total_zeros = sum(jnp.sum(param == 0).item() for param in flattened_params if isinstance(param, jnp.ndarray))
+        table2 = wandb.Table(columns=["Sweep", "Parameters zero"])
+        table2.add_data(wandb.run.name, total_zeros)
+        wandb.log({"Parameter Sweep Table": table2})
+        total_params = sum(param.size for param in flattened_params if isinstance(param, jnp.ndarray))
+        print(total_params)
+
+    log_zeros(params)
 
     symb = get_symbolic_expr_div(apply_mask(mask, spec, params), funs)[0]
-    #symb = get_symbolic_expr_div(params, funs)[0]
 
     spec, fparam = flatten(params)
     full_shape = fparam.shape
@@ -222,21 +233,6 @@ def train(cfg: DictConfig):
         return expr
     
     print(clean_expr(symb))
-
-    def watch_pytree(pytree):
-        keys_leaves = jax.tree_util.tree_leaves_with_path(pytree)
-
-        for key, leaf in keys_leaves:
-            if isinstance(leaf, jax.numpy.ndarray) or isinstance(leaf, float):
-                name = ''
-                for i in range(len(key)):
-                    name += str(key[i])
-                try:
-                    wandb.log({f"params/{name}": wandb.Histogram(leaf.ravel())})
-                except:
-                    pass
-
-    watch_pytree(params)
 
     wandb.finish()
 

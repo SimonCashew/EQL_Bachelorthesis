@@ -1,0 +1,122 @@
+2025-03-11 15:40:07,684 INFO    StreamThr :16628 [internal.py:wandb_internal():83] W&B internal server running at pid: 16628, started at: 2025-03-11 15:40:07.684355
+2025-03-11 15:40:07,700 INFO    WriterThread:16628 [datastore.py:open_for_write():87] open: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\run-c8u5xj7x.wandb
+2025-03-11 15:40:08,189 INFO    HandlerThread:16628 [system_monitor.py:start():187] Starting system monitor
+2025-03-11 15:40:08,192 INFO    SystemMonitor:16628 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-03-11 15:40:08,192 INFO    HandlerThread:16628 [system_monitor.py:probe():207] Collecting system info
+2025-03-11 15:40:08,195 INFO    SystemMonitor:16628 [interfaces.py:start():186] Started cpu monitoring
+2025-03-11 15:40:08,195 INFO    SystemMonitor:16628 [interfaces.py:start():186] Started disk monitoring
+2025-03-11 15:40:08,209 INFO    SystemMonitor:16628 [interfaces.py:start():186] Started memory monitoring
+2025-03-11 15:40:08,209 INFO    SenderThread:16628 [dir_watcher.py:__init__():211] watching files in: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files
+2025-03-11 15:40:08,224 INFO    SystemMonitor:16628 [interfaces.py:start():186] Started network monitoring
+2025-03-11 15:40:08,224 INFO    SenderThread:16628 [sender.py:_start_run_threads():1150] run started: c8u5xj7x with start time 1741704007.684355
+2025-03-11 15:40:08,311 INFO    HandlerThread:16628 [system_monitor.py:probe():217] Finished collecting system info
+2025-03-11 15:40:08,319 INFO    HandlerThread:16628 [system_monitor.py:probe():220] Publishing system info
+2025-03-11 15:40:09,205 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\conda-environment.yaml
+2025-03-11 15:40:10,744 INFO    HandlerThread:16628 [system_monitor.py:probe():222] Finished publishing system info
+2025-03-11 15:40:10,750 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-03-11 15:40:11,209 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\conda-environment.yaml
+2025-03-11 15:40:11,209 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-metadata.json
+2025-03-11 15:40:11,209 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\requirements.txt
+2025-03-11 15:40:11,601 INFO    wandb-upload_0:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp_nb2sj47wandb\0ujsjks3-wandb-metadata.json
+2025-03-11 15:40:12,213 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\output.log
+2025-03-11 15:40:14,222 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\output.log
+2025-03-11 15:40:42,362 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\config.yaml
+2025-03-11 15:42:59,231 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table\Validation Sweep Table_0_10c0b685913bc7bc671c.table.json
+2025-03-11 15:42:59,232 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table
+2025-03-11 15:42:59,232 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media
+2025-03-11 15:42:59,644 INFO    wandb-upload_0:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp_nb2sj47wandb\enss9eg1-media/table/Validation Sweep Table_0_10c0b685913bc7bc671c.table.json
+2025-03-11 15:43:00,235 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table\Parameter Sweep Table_1_5582637ededae12444b9.table.json
+2025-03-11 15:43:00,235 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table
+2025-03-11 15:43:00,448 INFO    wandb-upload_0:16628 [upload_job.py:push():88] Uploaded file C:\Users\Simon\AppData\Local\wandb\wandb\artifacts\staging\tmpcg1k1aa8
+2025-03-11 15:43:00,739 INFO    wandb-upload_1:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp_nb2sj47wandb\vwfifmdf-media/table/Parameter Sweep Table_1_5582637ededae12444b9.table.json
+2025-03-11 15:43:01,473 INFO    SenderThread:16628 [sender.py:send_request_log_artifact():1503] logged artifact run-c8u5xj7x-ValidationSweepTable - {'id': 'QXJ0aWZhY3Q6MTU2MTAwNzY2Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU3Nzg0MDk1Nw==', 'latestArtifact': None}}
+2025-03-11 15:43:01,473 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file media\table\Validation Sweep Table_0_10c0b685913bc7bc671c.table.json with policy now
+2025-03-11 15:43:01,477 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-03-11 15:43:01,985 INFO    wandb-upload_0:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp_nb2sj47wandb\h8cm44ht-media/table/Validation Sweep Table_0_10c0b685913bc7bc671c.table.json
+2025-03-11 15:43:02,251 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-summary.json
+2025-03-11 15:43:02,685 INFO    wandb-upload_1:16628 [upload_job.py:push():88] Uploaded file C:\Users\Simon\AppData\Local\wandb\wandb\artifacts\staging\tmp2caziu14
+2025-03-11 15:43:03,634 INFO    SenderThread:16628 [sender.py:send_request_log_artifact():1503] logged artifact run-c8u5xj7x-ParameterSweepTable - {'id': 'QXJ0aWZhY3Q6MTU2MTAwNzcyOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU3Nzg0MDk3OA==', 'latestArtifact': None}}
+2025-03-11 15:43:03,634 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file media\table\Parameter Sweep Table_1_5582637ededae12444b9.table.json with policy now
+2025-03-11 15:43:03,635 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:send_exit():570] handling exit code: 0
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:send_exit():572] handling runtime: 174
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:send_exit():578] send defer
+2025-03-11 15:43:03,637 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 0
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 0
+2025-03-11 15:43:03,637 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 1
+2025-03-11 15:43:03,637 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 1
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 1
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 2
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 2
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [system_monitor.py:finish():196] Stopping system monitor
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [interfaces.py:finish():198] Joined cpu monitor
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [interfaces.py:finish():198] Joined disk monitor
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [interfaces.py:finish():198] Joined memory monitor
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [interfaces.py:finish():198] Joined network monitor
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 2
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 3
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 3
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 3
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 4
+2025-03-11 15:43:03,642 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 4
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 4
+2025-03-11 15:43:03,642 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 5
+2025-03-11 15:43:03,650 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 5
+2025-03-11 15:43:03,652 INFO    SenderThread:16628 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-03-11 15:43:03,652 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 5
+2025-03-11 15:43:03,652 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 6
+2025-03-11 15:43:03,652 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 6
+2025-03-11 15:43:03,652 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 6
+2025-03-11 15:43:03,956 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 7
+2025-03-11 15:43:03,956 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 7
+2025-03-11 15:43:03,956 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 7
+2025-03-11 15:43:04,104 INFO    wandb-upload_0:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\AppData\Local\Temp\tmp_nb2sj47wandb\9jbk62hi-media/table/Parameter Sweep Table_1_5582637ededae12444b9.table.json
+2025-03-11 15:43:04,268 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-summary.json
+2025-03-11 15:43:04,268 INFO    Thread-16 :16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\config.yaml
+2025-03-11 15:43:05,311 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 8
+2025-03-11 15:43:05,311 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 8
+2025-03-11 15:43:05,311 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 8
+2025-03-11 15:43:05,311 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 9
+2025-03-11 15:43:05,311 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 9
+2025-03-11 15:43:05,311 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 9
+2025-03-11 15:43:05,311 INFO    SenderThread:16628 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-03-11 15:43:06,283 INFO    SenderThread:16628 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\output.log
+2025-03-11 15:43:06,283 INFO    SenderThread:16628 [dir_watcher.py:finish():388] scan: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files
+2025-03-11 15:43:06,284 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\conda-environment.yaml conda-environment.yaml
+2025-03-11 15:43:06,284 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\config.yaml config.yaml
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\output.log output.log
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\requirements.txt requirements.txt
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-metadata.json wandb-metadata.json
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-summary.json wandb-summary.json
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table\Parameter Sweep Table_1_5582637ededae12444b9.table.json media/table/Parameter Sweep Table_1_5582637ededae12444b9.table.json
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [dir_watcher.py:finish():402] scan save: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\media\table\Validation Sweep Table_0_10c0b685913bc7bc671c.table.json media/table/Validation Sweep Table_0_10c0b685913bc7bc671c.table.json
+2025-03-11 15:43:06,287 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 10
+2025-03-11 15:43:06,287 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 10
+2025-03-11 15:43:06,302 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 10
+2025-03-11 15:43:06,302 INFO    SenderThread:16628 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-11 15:43:06,668 INFO    wandb-upload_1:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\conda-environment.yaml
+2025-03-11 15:43:06,700 INFO    wandb-upload_0:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\config.yaml
+2025-03-11 15:43:06,849 INFO    wandb-upload_4:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\wandb-summary.json
+2025-03-11 15:43:06,849 INFO    wandb-upload_3:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\requirements.txt
+2025-03-11 15:43:06,849 INFO    wandb-upload_2:16628 [upload_job.py:push():130] Uploaded file C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\files\output.log
+2025-03-11 15:43:07,067 INFO    Thread-15 (_thread_body):16628 [sender.py:transition_state():598] send defer: 11
+2025-03-11 15:43:07,068 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 11
+2025-03-11 15:43:07,069 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 11
+2025-03-11 15:43:07,069 INFO    SenderThread:16628 [file_pusher.py:join():175] waiting for file pusher
+2025-03-11 15:43:07,071 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 12
+2025-03-11 15:43:07,071 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 12
+2025-03-11 15:43:07,072 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 12
+2025-03-11 15:43:07,072 INFO    SenderThread:16628 [file_stream.py:finish():601] file stream finish called
+2025-03-11 15:43:07,604 INFO    SenderThread:16628 [file_stream.py:finish():605] file stream finish is done
+2025-03-11 15:43:07,604 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 13
+2025-03-11 15:43:07,604 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 13
+2025-03-11 15:43:07,604 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 13
+2025-03-11 15:43:07,604 INFO    SenderThread:16628 [sender.py:transition_state():598] send defer: 14
+2025-03-11 15:43:07,604 INFO    HandlerThread:16628 [handler.py:handle_request_defer():188] handle defer: 14
+2025-03-11 15:43:07,604 INFO    SenderThread:16628 [sender.py:send_request_defer():594] handle sender defer: 14
+2025-03-11 15:43:07,618 INFO    HandlerThread:16628 [handler.py:finish():896] shutting down handler
+2025-03-11 15:43:08,617 INFO    WriterThread:16628 [datastore.py:close():296] close: C:\Users\Simon\Bachelorarbeit\EQL\eql\wandb\run-20250311_154005-c8u5xj7x\run-c8u5xj7x.wandb
+2025-03-11 15:43:08,618 INFO    SenderThread:16628 [sender.py:finish():1598] shutting down sender
+2025-03-11 15:43:08,618 INFO    SenderThread:16628 [file_pusher.py:finish():169] shutting down file pusher
+2025-03-11 15:43:08,618 INFO    SenderThread:16628 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,4 @@
+[2025-03-18 18:15:10,277][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+[2025-03-18 18:15:10,279][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+[34m[1mwandb[39m[22m: [33mWARNING[39m A graphql request initiated by the public wandb API timed out (timeout=19 sec). Create a new API with an integer timeout larger than 19, e.g., `api = wandb.Api(timeout=29)` to increase the graphql timeout.
+zoo*x0**3 + zoo*x0**2*x1 + zoo*x0**2*sin(0.893*x0 + 0.724*x1) + zoo*x0*x1**2 + zoo*x0*x1*sin(0.893*x0 + 0.724*x1) + zoo*x0 + zoo*x1**3 + zoo*x1**2*sin(0.893*x0 + 0.724*x1) + zoo*x1 + zoo*sin(0.893*x0 + 0.724*x1) + zoo*sin(1.016*x0 - 2.381*x1 + 2.464*sin(0.893*x0 + 0.724*x1))
