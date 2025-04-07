@@ -1,4 +1,0 @@
-[2025-03-21 11:12:33,070][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
-[2025-03-21 11:12:33,073][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
-410
-0.001104*x0*x1*sin(1.364*x0 - 0.598*x1)/(0.00157*x0**2*x1 + 0.00189*x0*x1**2 - 0.07*x1*x2*x3 + 0.049*x1*sin(1.364*x0 - 0.598*x1) - 0.653*x1) - 0.001031*x0*x1/(0.00157*x0**2*x1 + 0.00189*x0*x1**2 - 0.07*x1*x2*x3 + 0.049*x1*sin(1.364*x0 - 0.598*x1) - 0.653*x1) - 0.001594*x1/(0.00157*x0**2*x1 + 0.00189*x0*x1**2 - 0.07*x1*x2*x3 + 0.049*x1*sin(1.364*x0 - 0.598*x1) - 0.653*x1)

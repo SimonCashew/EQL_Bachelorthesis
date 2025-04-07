@@ -1,0 +1,17 @@
+[2025-03-31 19:27:33,913][jax._src.xla_bridge][INFO] - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+[2025-03-31 19:27:33,915][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+Backend: cpu
+Devices: [CpuDevice(id=0)]
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "C:\Users\Simon\Bachelorarbeit\EQL\eql\main_OPR.py", line 56, in train
+    x = random.uniform(key, (batchsize*0.9, xdim), minval=-1.0, maxval=1.0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\jax\_src\random.py", line 397, in uniform
+    shape = core.canonicalize_shape(shape)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Simon\.conda\envs\EQL\Lib\site-packages\jax\_src\core.py", line 1723, in canonicalize_shape
+    raise _invalid_shape_error(shape, context)
+TypeError: Shapes must be 1D sequences of concrete values of integer type, got (9000.0, 2).
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

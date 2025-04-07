@@ -1,7 +1,0 @@
-{"time":"2025-02-26T18:51:54.5323284+01:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"C:\\Users\\Simon\\Bachelorarbeit\\EQL\\eql\\wandb\\run-20250226_185154-2kvorvmd\\logs\\debug-core.log"}
-{"time":"2025-02-26T18:51:54.6453803+01:00","level":"INFO","msg":"created new stream","id":"2kvorvmd"}
-{"time":"2025-02-26T18:51:54.6453803+01:00","level":"INFO","msg":"stream: started","id":"2kvorvmd"}
-{"time":"2025-02-26T18:51:54.6453803+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"2kvorvmd"}
-{"time":"2025-02-26T18:51:54.6453803+01:00","level":"INFO","msg":"sender: started","stream_id":"2kvorvmd"}
-{"time":"2025-02-26T18:51:54.6453803+01:00","level":"INFO","msg":"handler: started","stream_id":"2kvorvmd"}
-{"time":"2025-02-26T18:51:55.0106797+01:00","level":"INFO","msg":"Starting system monitor"}

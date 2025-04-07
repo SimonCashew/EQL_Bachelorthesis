@@ -1,1 +1,0 @@
-{"loss": 0.00241913553327322, "_timestamp": 1740598922.02992, "_runtime": 152.6716570854187, "_step": 400, "validation_loss": 0.0023901937529444695, "sweep_id": "tcwndg65", "parameter_zeros": 361, "_wandb": {"runtime": 154}}
