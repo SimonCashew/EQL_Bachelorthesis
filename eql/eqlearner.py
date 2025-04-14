@@ -160,7 +160,12 @@ class EQLdiv(nn.Module):
         # return division output and b to compute penalty
         a = z2m[..., 0]
         b = z2m[..., 1]
-        return jnp.where(jnp.abs(b) > threshold, a/b, 0.), jnp.abs(b)
+        
+        mask = jnp.abs(b) > threshold
+        safe_b = jnp.where(mask, b, 1.0) 
+        result = jnp.where(mask, a / safe_b, 0.0)
+
+        return result, jnp.abs(b)
 
         
         out = jnp.stack([

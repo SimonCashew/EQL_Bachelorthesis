@@ -160,7 +160,7 @@ def train(cfg: DictConfig):
             lg = loss_grad_2
         params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         if i % 50 == 0 and i > 0:
-            wandb.log({"loss": loss_val})
+            run.log({"loss": loss_val})
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
         
     thr = l0_threshold
@@ -173,7 +173,7 @@ def train(cfg: DictConfig):
         params = apply_mask(mask, spec, params)
         T +=1
         if i % 50 == 0:
-            wandb.log({"loss": loss_val})
+            run.log({"loss": loss_val})
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
 
     def mse_val_fn(params, threshold):
@@ -184,7 +184,8 @@ def train(cfg: DictConfig):
 
     table = wandb.Table(columns=["Sweep", "Validation Loss"])
     table.add_data(wandb.run.name, val_loss)
-    wandb.log({"Validation Sweep Table": table})
+    run.log({"Validation Sweep Table": table})
+    run.log({"Validation Loss": val_loss})
 
     def mse_val_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_val_ex, threshold)
@@ -194,8 +195,8 @@ def train(cfg: DictConfig):
 
     table3 = wandb.Table(columns=["Sweep", "Extrapolation Validation Loss"])
     table3.add_data(wandb.run.name, val_ex_loss)
-    wandb.log({"Extrapolation Validation Sweep Table": table3})
-
+    run.log({"Extrapolation Validation Sweep Table": table3})
+    run.log({"Extrapolation Validation Loss": val_ex_loss})
 
     def log_zeros(params):
         flattened_params, _ = tree_flatten(params)
@@ -204,7 +205,8 @@ def train(cfg: DictConfig):
         total_params = sum(param.size for param in flattened_params if isinstance(param, jnp.ndarray))
         table2 = wandb.Table(columns=["Sweep", "Parameters", "Total Parameters"])
         table2.add_data(wandb.run.name, total_params - total_zeros, total_params)
-        wandb.log({"Parameter Sweep Table": table2})
+        run.log({"Parameter Sweep Table": table2})
+        run.log({"Parameter": total_params - total_zeros})
 
     log_zeros(params)
 
