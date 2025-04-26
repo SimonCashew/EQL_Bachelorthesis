@@ -26,7 +26,6 @@ from omegaconf import DictConfig, OmegaConf
 def train(cfg: DictConfig):
     print("Starting run...")
     cfg_container = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
-    run = wandb.init(project="eval_OPR_2", config=cfg_container)
     cfg_dict = dict(wandb.config)
     cfg = OmegaConf.create(cfg_dict)
     print("Backend:", jax.default_backend())
@@ -185,7 +184,6 @@ def train(cfg: DictConfig):
             lg = loss_grad_2
         params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         if i % 50 == 0 and i > 0:
-            run.log({"loss": loss_val})
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
         
     thr = l0_threshold
@@ -198,7 +196,6 @@ def train(cfg: DictConfig):
         params = apply_mask(mask, spec, params)
         T +=1
         if i % 50 == 0:
-            run.log({"loss": loss_val})
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
 
     def mse_val_fn(params, threshold):
@@ -206,50 +203,28 @@ def train(cfg: DictConfig):
         return jnp.mean((pred - y_val) ** 2)
 
     val_loss = mse_val_fn(params, 1e-4)
-
-    table = wandb.Table(columns=["Sweep", "Validation Loss"])
-    table.add_data(wandb.run.name, val_loss)
-    run.log({"Validation Sweep Table": table})
-    run.log({"Validation Loss": val_loss})
+    print(val_loss)
 
     def mse_val_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_val_ex, threshold)
         return jnp.mean((pred - y_val_ex) ** 2)
 
     val_ex_loss = mse_val_ex_fn(params, 1e-4)
-
-    table3 = wandb.Table(columns=["Sweep", "Extrapolation Validation Loss"])
-    table3.add_data(wandb.run.name, val_ex_loss)
-    run.log({"Extrapolation Validation Sweep Table": table3})
-    run.log({"Extrapolation Validation Loss": val_ex_loss})
-
-    def log_zeros(params):
-        flattened_params, _ = tree_flatten(params)
-
-        total_zeros = sum(jnp.sum(param == 0).item() for param in flattened_params if isinstance(param, jnp.ndarray))
-        total_params = sum(param.size for param in flattened_params if isinstance(param, jnp.ndarray))
-        table2 = wandb.Table(columns=["Sweep", "Parameters", "Total Parameters"])
-        table2.add_data(wandb.run.name, total_params - total_zeros, total_params)
-        run.log({"Parameter Sweep Table": table2})
-        run.log({"Parameter": total_params - total_zeros})
-
-    log_zeros(params)
+    print(val_ex_loss)
 
     def mse_test_fn(params, threshold):
         pred, _ = e.apply(params, x_test, threshold)
         return jnp.mean((pred - y_test) ** 2)
 
     test_loss = mse_test_fn(params, 1e-4)
+    print(test_loss)
 
     def mse_test_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_test_ex, threshold)
         return jnp.mean((pred - y_test_ex) ** 2)
 
     test_ex_loss = mse_test_ex_fn(params, 1e-4)
-    run.log({"Test Loss": test_loss})
-    run.log({"Extrapolation Test Loss": test_ex_loss})
-    
-    wandb.finish()
+    print(test_ex_loss)
 
     symb = get_symbolic_expr_div(params, funs)[0]
 
@@ -292,8 +267,6 @@ def train(cfg: DictConfig):
         print(sy.simplify(expr))
     
     clean_expr(symb)     
-
-        
 
 if __name__=='__main__':
     train()
