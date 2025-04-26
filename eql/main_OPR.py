@@ -26,7 +26,7 @@ from omegaconf import DictConfig, OmegaConf
 def train(cfg: DictConfig):
     print("Starting run...")
     cfg_container = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
-    run = wandb.init(project="test_OPR", config=cfg_container)
+    run = wandb.init(project="eval_OPR_2", config=cfg_container)
     cfg_dict = dict(wandb.config)
     cfg = OmegaConf.create(cfg_dict)
     print("Backend:", jax.default_backend())
@@ -57,21 +57,30 @@ def train(cfg: DictConfig):
     x_val = random.uniform(random.PRNGKey(1), (1000, xdim), minval=-1.0, maxval=1.0)
     x_raw = random.uniform(random.PRNGKey(2), (120, xdim), minval=-2.0, maxval=2.0)
     x_val_ex = x_raw[(jnp.any(x_raw < -1.0, axis=1) | jnp.any(x_raw > 1.0, axis=1))][:40]
+    x_test = random.uniform(random.PRNGKey(3), (1000, xdim), minval=-1.0, maxval=1.0)
+    x_raw = random.uniform(random.PRNGKey(4), (120, xdim), minval=-2.0, maxval=2.0)
+    x_test_ex = x_raw[(jnp.any(x_raw < -1.0, axis=1) | jnp.any(x_raw > 1.0, axis=1))][:40]
 
     if (xdim == 2):
         y = np.sin(np.pi * x[:,0])/(x[:,1]**2 + 1) + noise
         y_val = np.sin(np.pi * x_val[:,0])/(x_val[:,1]**2 + 1)
         y_val_ex = np.sin(np.pi * x_val_ex[:,0])/(x_val_ex[:,1]**2 + 1)
+        y_test = np.sin(np.pi * x_test[:,0])/(x_test[:,1]**2 + 1)
+        y_test_ex = np.sin(np.pi * x_test_ex[:,0])/(x_test_ex[:,1]**2 + 1)
         max_out = 3
     elif (xdim == 3):
         y = 1./2.*(np.sin(np.pi*x[:,0]) + np.cos(2*x[:,1]*np.sin(np.pi*x[:,0]))-x[:,1]*x[:,2]) + noise
         y_val = 1./2.*(np.sin(np.pi*x_val[:,0]) + np.cos(2*x_val[:,1]*np.sin(np.pi*x_val[:,0]))-x_val[:,1]*x_val[:,2])
         y_val_ex = 1./2.*(np.sin(np.pi*x_val_ex[:,0]) + np.cos(2*x_val_ex[:,1]*np.sin(np.pi*x_val_ex[:,0]))-x_val_ex[:,1]*x_val_ex[:,2])
+        y_test = 1./2.*(np.sin(np.pi*x_test[:,0]) + np.cos(2*x_test[:,1]*np.sin(np.pi*x_test[:,0]))-x_test[:,1]*x_test[:,2])
+        y_test_ex = 1./2.*(np.sin(np.pi*x_test_ex[:,0]) + np.cos(2*x_test_ex[:,1]*np.sin(np.pi*x_test_ex[:,0]))-x_test_ex[:,1]*x_test_ex[:,2])
         max_out = 9
     elif (xdim == 4):
         y = 1./3. * ((1.+x[:,1])*np.sin(np.pi*x[:,0]) + x[:,1]*x[:,2]*x[:,3]) + noise
         y_val = 1./3. * ((1.+x_val[:,1])*np.sin(np.pi*x_val[:,0]) + x_val[:,1]*x_val[:,2]*x_val[:,3])
         y_val_ex = 1./3. * ((1.+x_val_ex[:,1])*np.sin(np.pi*x_val_ex[:,0]) + x_val_ex[:,1]*x_val_ex[:,2]*x_val_ex[:,3])
+        y_test = 1./3. * ((1.+x_test[:,1])*np.sin(np.pi*x_test[:,0]) + x_test[:,1]*x_test[:,2]*x_test[:,3])
+        y_test_ex = 1./3. * ((1.+x_test_ex[:,1])*np.sin(np.pi*x_test_ex[:,0]) + x_test_ex[:,1]*x_test_ex[:,2]*x_test_ex[:,3])
         max_out = 11
 
     params = e.init({'params':init_key}, x, 1.0)
@@ -83,12 +92,7 @@ def train(cfg: DictConfig):
     def mse_b_fn(params, threshold):
         pred, b = e.apply(params, x, threshold)
         return jnp.mean((pred-y)**2), b
-
-    def mse_b_y_fn(params, threshold):
-        pred, b = e.apply(params, x, threshold)
-        return jnp.mean((pred-y)**2), b, pred
-
-
+    
     def get_mask_spec(thresh, params):
         flat, spec = tree_flatten(params)
         mask = [jnp.abs(f) > thresh for f in flat]
@@ -98,15 +102,6 @@ def train(cfg: DictConfig):
         flat, _ = tree_flatten(params)
         masked_params = tree_unflatten(spec, [f*m for f,m in zip(flat, mask)])
         return masked_params
-
-
-    def get_masked_mse(thresh, params):
-        mask, spec = get_mask_spec(thresh, params)
-        def masked_mse(params, threshold):
-            masked_params = apply_mask(mask, spec, params)
-            return mse_fn(masked_params, threshold)
-        return jax.jit(masked_mse)
-    
 
     def l1_fn(params):
         return sum(
@@ -240,9 +235,63 @@ def train(cfg: DictConfig):
 
     log_zeros(params)
 
+    def mse_test_fn(params, threshold):
+        pred, _ = e.apply(params, x_test, threshold)
+        return jnp.mean((pred - y_test) ** 2)
+
+    test_loss = mse_test_fn(params, 1e-4)
+
+    def mse_test_ex_fn(params, threshold):
+        pred, _ = e.apply(params, x_test_ex, threshold)
+        return jnp.mean((pred - y_test_ex) ** 2)
+
+    test_ex_loss = mse_test_ex_fn(params, 1e-4)
+    run.log({"Test Loss": test_loss})
+    run.log({"Extrapolation Test Loss": test_ex_loss})
     
     wandb.finish()
 
+    symb = get_symbolic_expr_div(params, funs)[0]
+
+    spec, fparam = flatten(params)
+    full_shape = fparam.shape
+    mask = jnp.abs(fparam) > 0.01
+    idxs = jnp.arange(fparam.shape[0])[mask]
+
+    def red_loss_grad_fn(red_param):
+        full_param = jnp.zeros(full_shape).at[idxs].set(red_param)
+        full_param = unflatten(spec, full_param)
+
+        loss, grad = loss_grad_1(full_param, 1e-4)
+        _, grad = flatten(grad)
+        return loss, np.array(grad)[idxs,]
+    
+    x0, f, info = scipy.optimize.fmin_l_bfgs_b(
+        red_loss_grad_fn,
+        x0 = np.array(fparam[mask]),
+        factr=1.,
+        m=500,
+        pgtol=1e-13,
+        maxls=100)
+    
+    final_param = unflatten(spec, jnp.zeros(full_shape).at[idxs].set(x0))
+
+    symb = get_symbolic_expr_div(final_param, funs)[0]
+
+    def clean_expr(expr):
+        def prune(expr, thr=1e-5):
+            return expr.replace(lambda x: x.is_Number and abs(x) < thr, lambda x: 0)
+        
+        def rounding(expr, dig=3):
+            return expr.xreplace(Transform(lambda x: x.round(dig), lambda x: x.is_Number))
+        
+        expr = prune(expr)
+        expr = rounding(expr)
+        expr = prune(sy.expand(expr), 1e-3)
+        print(expr)
+        print(sy.simplify(expr))
+    
+    clean_expr(symb)     
 
         
 
