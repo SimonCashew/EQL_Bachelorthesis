@@ -2,14 +2,14 @@ defaults:
   - _self_
   - sweep: sweep
 
-in_size: 2
+in_size: 3
 width_size: 12
-depth: 1
+depth: 3
 seed: 0
-init_seed: 25
+init_seed: 30
 
-lr_start: 0.0005
-reg_factor: 0.005
+lr_start: 1e-3
+reg_factor: 5e-3
 
 wandb:
   setup:
