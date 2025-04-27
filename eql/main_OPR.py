@@ -11,7 +11,6 @@ import sys
 sys.path.append("..")
 sys.path.append("../../orient/")
 
-
 from eql.eqlearner import EQLdiv
 from eql.symbolic import get_symbolic_expr_div, get_symbolic_expr
 from eql.np_utils import flatten, unflatten
@@ -25,9 +24,6 @@ from omegaconf import DictConfig, OmegaConf
 @hydra.main(config_path="conf", config_name="config", version_base="1.3")
 def train(cfg: DictConfig):
     print("Starting run...")
-    cfg_container = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
-    cfg_dict = dict(wandb.config)
-    cfg = OmegaConf.create(cfg_dict)
     print("Backend:", jax.default_backend())
     print("Devices:", jax.devices())
 
@@ -184,6 +180,7 @@ def train(cfg: DictConfig):
             lg = loss_grad_2
         params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         if i % 50 == 0 and i > 0:
+            print("loss:", loss_val)
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
         
     thr = l0_threshold
@@ -196,6 +193,7 @@ def train(cfg: DictConfig):
         params = apply_mask(mask, spec, params)
         T +=1
         if i % 50 == 0:
+            print("loss:", loss_val)
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
 
     def mse_val_fn(params, threshold):
@@ -203,28 +201,28 @@ def train(cfg: DictConfig):
         return jnp.mean((pred - y_val) ** 2)
 
     val_loss = mse_val_fn(params, 1e-4)
-    print(val_loss)
+    print("val_loss:", val_loss)
 
     def mse_val_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_val_ex, threshold)
         return jnp.mean((pred - y_val_ex) ** 2)
 
     val_ex_loss = mse_val_ex_fn(params, 1e-4)
-    print(val_ex_loss)
+    print("val_ex_loss:", val_ex_loss)
 
     def mse_test_fn(params, threshold):
         pred, _ = e.apply(params, x_test, threshold)
         return jnp.mean((pred - y_test) ** 2)
 
     test_loss = mse_test_fn(params, 1e-4)
-    print(test_loss)
+    print("test_loss:", test_loss)
 
     def mse_test_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_test_ex, threshold)
         return jnp.mean((pred - y_test_ex) ** 2)
 
     test_ex_loss = mse_test_ex_fn(params, 1e-4)
-    print(test_ex_loss)
+    print("test_ex_loss:", test_ex_loss)
 
     symb = get_symbolic_expr_div(params, funs)[0]
 

@@ -24,9 +24,6 @@ from omegaconf import DictConfig, OmegaConf
 @hydra.main(config_path="conf", config_name="config", version_base="1.3")
 def train(cfg: DictConfig):
     print("Starting run...")
-    cfg_container = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
-    cfg_dict = dict(wandb.config)
-    cfg = OmegaConf.create(cfg_dict)
     print("Backend:", jax.default_backend())
     print("Devices:", jax.devices())
 
@@ -101,7 +98,6 @@ def train(cfg: DictConfig):
         masked_params = tree_unflatten(spec, [f*m for f,m in zip(flat, mask)])
         return masked_params
     
-
     def l1_fn(params):
         return sum(
             jnp.abs(w).mean() for w in jax.tree.leaves(params["params"])
@@ -154,6 +150,7 @@ def train(cfg: DictConfig):
             lg = loss_grad_2
         params, opt_state, loss_val = do_step(lg, params, theta, opt_state)
         if i % 50 == 0 and i > 0:
+            print("loss:", loss_val)
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
         
     thr = l0_threshold
@@ -166,6 +163,7 @@ def train(cfg: DictConfig):
         params = apply_mask(mask, spec, params)
         T +=1
         if i % 50 == 0:
+            print("loss:", loss_val)
             params, opt_state, loss_val = do_step(loss_grad_pen, params, theta, opt_state)
 
     def mse_val_fn(params, threshold):
@@ -173,28 +171,28 @@ def train(cfg: DictConfig):
         return jnp.mean((pred - y_val) ** 2)
 
     val_loss = mse_val_fn(params, 1e-4)
-    print(val_loss)
+    print("val_loss:", val_loss)
 
     def mse_val_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_val_ex, threshold)
         return jnp.mean((pred - y_val_ex) ** 2)
 
     val_ex_loss = mse_val_ex_fn(params, 1e-4)
-    print(val_ex_loss)
+    print("val_ex_loss:", val_ex_loss)
 
     def mse_test_fn(params, threshold):
         pred, _ = e.apply(params, x_test, threshold)
         return jnp.mean((pred - y_test) ** 2)
 
     test_loss = mse_test_fn(params, 1e-4)
-    print(test_loss)
+    print("test_loss:", test_loss)
 
     def mse_test_ex_fn(params, threshold):
         pred, _ = e.apply(params, x_test_ex, threshold)
         return jnp.mean((pred - y_test_ex) ** 2)
 
     test_ex_loss = mse_test_ex_fn(params, 1e-4)
-    print(test_ex_loss)
+    print("test_ex_loss:", test_ex_loss)
 
 
     symb = get_symbolic_expr_div(params, funs)[0]
@@ -203,7 +201,6 @@ def train(cfg: DictConfig):
     full_shape = fparam.shape
     mask = jnp.abs(fparam) > 0.01
     idxs = jnp.arange(fparam.shape[0])[mask]
-    count = sum(mask).item()
 
     def red_loss_grad_fn(red_param):
         full_param = jnp.zeros(full_shape).at[idxs].set(red_param)

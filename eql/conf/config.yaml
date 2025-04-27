@@ -11,7 +11,3 @@ init_seed: 30
 lr_start: 1e-3
 reg_factor: 5e-3
 
-wandb:
-  setup:
-    entity: simonb03-university-of-t-bingen
-
